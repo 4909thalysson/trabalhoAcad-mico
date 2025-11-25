@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspector - Início</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <!-- ==== CABEÇALHO ==== -->
+    <header class="cabecalho">
+        <div class="cabecalho__conteudo">
+            <div class="cabecalho__left">
+                <img src="Group 2.png" alt="Logo Inspector" class="cabecalho__logo">
+                <h1 class="cabecalho__titulo">Inspector</h1>
+            </div>
+            <nav class="cabecalho__menu">
+                <a href="inicio.html" class="ativo">Início</a>
+                <a href="registros.html">Registros</a>
+                <a href="conhecimento.html">Conhecimento</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==== CONTEÚDO PRINCIPAL ==== -->
+    <main class="container">
+        <section class="formulario__secao">
+            <h2>Registrar Inspeção / Auditoria</h2>
+            <p class="descricao">Preencha os campos abaixo para registrar uma nova atividade de inspeção ou auditoria.</p>
+
+            <form id="formAuditoria" class="formulario">
+                <div class="linha__form">
+                    <div class="form__grupo">
+                        <label for="dataHora">Data e Hora:</label>
+                        <input type="datetime-local" id="dataHora" name="dataHora" required>
+                    </div>
+
+                    <div class="form__grupo">
+                        <label for="titulo">Título:</label>
+                        <input type="text" id="titulo" name="titulo" placeholder="Digite o título da inspeção" required>
+                    </div>
+                </div>
+
+                <div class="linha__form">
+                    <div class="form__grupo">
+                        <label for="local">Local:</label>
+                        <input type="text" id="local" name="local" placeholder="Insira o local">
+                    </div>
+
+                    <div class="form__grupo">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Cidade / UF">
+                    </div>
+                </div>
+
+                <div class="form__grupo">
+                    <label for="objetivo">Objetivo(s):</label>
+                    <input type="text" id="objetivo" name="objetivo" placeholder="Descreva o objetivo da inspeção">
+                </div>
+
+                <div class="form__grupo">
+                    <label for="descricao">Descrição (opcional):</label>
+                    <textarea id="descricao" name="descricao" rows="3" placeholder="Adicione observações, se necessário..."></textarea>
+                </div>
+
+                <div class="form__grupo">
+                    <label>Status:</label>
+                    <div class="opcoes__status">
+                        <label><input type="radio" name="status" value="Planejada" checked> Planejada</label>
+                        <label><input type="radio" name="status" value="Em andamento"> Em andamento</label>
+                        <label><input type="radio" name="status" value="Concluída"> Concluída</label>
+                        <label><input type="radio" name="status" value="Cancelada"> Cancelada</label>
+                    </div>
+                </div>
+
+                <div class="linha__form">
+                    <div class="form__grupo">
+                        <label for="anexo">Anexo:</label>
+                        <input type="file" id="anexo" name="anexo" accept=".jpg,.png,.pdf">
+                    </div>
+
+                    <div class="form__grupo">
+                        <label for="responsavel">Responsável:</label>
+                        <input type="text" id="responsavel" name="responsavel" placeholder="Nome do auditor responsável">
+                    </div>
+                </div>
+
+                <div class="form__acoes">
+                    <button type="submit" class="botao__salvar">Salvar Registro</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- ==== RODAPÉ ==== -->
+    <footer class="rodape">
+        <p>© 2025 Inspector — Sistema de Auditorias e Inspeções</p>
+    </footer>
+</body>
+</html>

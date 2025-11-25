@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros | Inspector</title>
+    <link rel="stylesheet" href="registros.css">
+</head>
+<body>
+    <!-- ==== CABEÇALHO ==== -->
+    <header class="cabecalho">
+        <div class="cabecalho__conteudo">
+            <div class="cabecalho__left">
+                <img src="Group 2.png" alt="Logo Inspector" class="cabecalho__logo">
+                <h1 class="cabecalho__titulo">Inspector</h1>
+            </div>
+            <nav class="cabecalho__menu">
+                <a href="inicio.html">Início</a>
+                <a href="registros.html" class="ativo">Registros</a>
+                <a href="conhecimento.html">Conhecimento</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==== CONTEÚDO PRINCIPAL ==== -->
+    <main class="container">
+        <section class="titulo__secao">
+            <h2>Registros de Auditorias e Inspeções</h2>
+            <p class="descricao">Visualize, edite e acompanhe os registros realizados durante as auditorias.</p>
+        </section>
+
+        <!-- ==== FILTROS E AÇÕES ==== -->
+        <section class="acoes">
+            <div class="filtros">
+                <input type="text" id="filtro-titulo" placeholder="Buscar por título...">
+                <input type="date" id="filtro-data">
+                <button class="btn btn-filtrar">Filtrar</button>
+            </div>
+            <button class="btn btn-novo">+ Novo Registro</button>
+        </section>
+
+        <!-- ==== TABELA ==== -->
+        <section class="tabela__registros">
+            <table class="registros__tabela">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Título</th>
+                        <th>Local</th>
+                        <th>Responsável</th>
+                        <th>Status</th>
+                        <th class="acoes-col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-dados">
+                    <!-- Exemplo de linha inicial -->
+                    <tr>
+                        <td data-label="Data">2025-11-01</td>
+                        <td data-label="Título">Inspeção de Segurança</td>
+                        <td data-label="Local">Unidade A</td>
+                        <td data-label="Responsável">João Silva</td>
+                        <td data-label="Status"><span class="status status-andamento">Em andamento</span></td>
+                        <td data-label="Ações" class="acoes-col">
+                            <button class="btn btn-editar" title="Editar">Editar</button>
+                            <button class="btn btn-excluir" title="Excluir">Excluir</button>
+                            <button class="btn btn-imprimir" title="Imprimir">Imprimir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- ==== RODAPÉ ==== -->
+    <footer class="rodape">
+        <p>© 2025 Inspector — Sistema de Auditorias e Inspeções</p>
+    </footer>
+</body>
+</html>

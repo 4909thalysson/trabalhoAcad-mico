@@ -1,0 +1,175 @@
+/* ==== BASE ==== */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* ==== CABEÇALHO ==== */
+.cabecalho {
+    background-color: #6631D7;
+    color: white;
+    padding: 12px 24px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cabecalho__conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cabecalho__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho__logo {
+    height: 40px;
+}
+
+.cabecalho__titulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cabecalho__menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+.cabecalho__menu .ativo {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 4px;
+}
+
+/* ==== CONTEÚDO ==== */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #6631D7;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.descricao {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* ==== FORMULÁRIO ==== */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.linha__form {
+    display: flex;
+    gap: 20px;
+}
+
+.form__grupo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__grupo label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.form__grupo input,
+.form__grupo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.2s;
+}
+
+.form__grupo input:focus,
+.form__grupo textarea:focus {
+    border-color: #6631D7;
+    outline: none;
+}
+
+.opcoes__status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 6px;
+}
+
+.opcoes__status label {
+    font-weight: normal;
+    color: #333;
+}
+
+/* ==== BOTÃO SALVAR ==== */
+.form__acoes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botao__salvar {
+    background-color: #6631D7;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao__salvar:hover {
+    background-color: #5425b6;
+}
+
+/* ==== RODAPÉ ==== */
+.rodape {
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    background-color: #6631D7;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+/* ==== RESPONSIVO ==== */
+@media (max-width: 768px) {
+
+    
+
+    .linha__form {
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 30px 15px;
+        padding: 20px;
+    }
+
+    .cabecalho__menu a {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+}
