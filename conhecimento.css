@@ -1,0 +1,130 @@
+/* ==== BASE ==== */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* ==== CABEÇALHO ==== */
+.cabecalho {
+    background-color: #6631D7;
+    color: white;
+    padding: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cabecalho__conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cabecalho__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho__logo {
+    height: 40px;
+}
+
+.cabecalho__titulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cabecalho__menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+.cabecalho__menu .ativo {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 4px;
+}
+
+/* ==== CONTAINER ==== */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ==== Cards (mantendo o resto do CSS original) ==== */
+.titulo__principal {
+    font-size: 1.8rem;
+    color: #6631D7;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.cards__area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    width: 320px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: #6631D7;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.botao__ver {
+    background-color: #6631D7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.botao__ver:hover {
+    background-color: #5124ad;
+}
+
+/* ==== Responsivo ==== */
+@media (max-width: 768px) {
+    .cards__area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .cabecalho__menu a {
+        margin-left: 15px;
+        font-size: 10px;
+    }
+}

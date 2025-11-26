@@ -1,0 +1,247 @@
+/* ==== BASE ==== */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* ==== CABEÇALHO ==== */
+.cabecalho {
+    background-color: #6631D7;
+    color: #fff;
+    padding: 12px 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.cabecalho__conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cabecalho__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho__logo {
+    height: 40px;
+}
+
+.cabecalho__titulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cabecalho__menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.cabecalho__menu a:hover {
+    opacity: 0.8;
+}
+
+.cabecalho__menu .ativo {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 4px;
+}
+
+/* ==== CONTAINER ==== */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ==== SEÇÃO DE TÍTULO ==== */
+.titulo__secao {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo__secao h2 {
+    color: #6631D7;
+    font-size: 28px;
+    margin: 0;
+}
+
+.titulo__secao .descricao {
+    color: #555;
+    margin-top: 8px;
+}
+
+/* ==== AÇÕES ==== */
+.acoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+}
+
+.filtros input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-filtrar {
+    background-color: #6631D7;
+    color: #fff;
+}
+
+.btn-filtrar:hover {
+    background-color: #5425b6;
+}
+
+.btn-novo {
+    background-color: #06d6a0;
+    color: #fff;
+}
+
+.btn-novo:hover {
+    background-color: #05b784;
+}
+
+/* ==== TABELA ==== */
+.registros__tabela {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.registros__tabela th {
+    background-color: #6631D7;
+    color: #fff;
+    padding: 14px 16px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.registros__tabela td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.registros__tabela tbody tr:hover {
+    background-color: #f9f6ff;
+}
+
+/* ==== STATUS BADGES ==== */
+.status {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+}
+
+.status-andamento { background-color: #ffb703; }
+.status-concluido { background-color: #06d6a0; }
+.status-atrasado { background-color: #d62828; }
+
+/* ==== BOTÕES DE AÇÃO ==== */
+.btn-editar {
+    background-color: #ffb703;
+    color: #fff;
+}
+.btn-editar:hover { background-color: #e09c00; }
+
+.btn-excluir {
+    background-color: #d62828;
+    color: #fff;
+}
+.btn-excluir:hover { background-color: #b71c1c; }
+
+.btn-imprimir {
+    background-color: #06d6a0;
+    color: #fff;
+}
+.btn-imprimir:hover { background-color: #04b383; }
+
+.acoes-col {
+    white-space: nowrap;
+}
+
+/* ==== RODAPÉ ==== */
+.rodape {
+    background-color: #6631D7;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0 ; 
+    font-size: 14px;
+    margin-top: 280px;
+}
+
+/* ==== RESPONSIVO ==== */
+@media (max-width: 768px) {
+    .acoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filtros {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-novo {
+        width: 100%;
+    }
+
+    .registros__tabela thead {
+        display: none;
+    }
+
+    .registros__tabela tr {
+        display: block;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        padding: 12px;
+    }
+
+    .registros__tabela td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border: none;
+    }
+
+    .registros__tabela td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #6631D7;
+    }
+
+    .cabecalho__menu a {
+        margin-left: 15px;
+        font-size: 10px;
+    }
+}
