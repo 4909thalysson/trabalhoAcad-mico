@@ -239,4 +239,9 @@ body {
         font-weight: bold;
         color: #6631D7;
     }
+
+    .cabecalho__menu a {
+        margin-left: 15px;
+        font-size: 10px;
+    }
 }

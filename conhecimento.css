@@ -9,37 +9,32 @@ body {
 /* ==== CABEÇALHO ==== */
 .cabecalho {
     background-color: #6631D7;
-    color: #fff;
-    padding: 12px 24px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    color: white;
+    padding: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .cabecalho__conteudo {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .cabecalho__left {
     display: flex;
-    align-items: center; /* Mantém alinhamento vertical */
-    gap: 8px; /* Reduz o espaço entre logo e título */
+    align-items: center;
+    gap: 10px;
 }
 
 .cabecalho__logo {
     height: 40px;
-    display: block; /* Garante que a imagem se comporte como bloco */
 }
 
 .cabecalho__titulo {
     font-size: 20px;
     font-weight: bold;
-    margin: 0; /* Remove margens padrão do título */
-    line-height: 40px; /* Alinha com a altura do logo */
-    display: flex;
-    align-items: center;
 }
 
 .cabecalho__menu a {
@@ -47,11 +42,6 @@ body {
     text-decoration: none;
     margin-left: 25px;
     font-weight: 600;
-    transition: opacity 0.3s;
-}
-
-.cabecalho__menu a:hover {
-    opacity: 0.8;
 }
 
 .cabecalho__menu .ativo {
@@ -69,7 +59,7 @@ body {
 /* ==== Cards (mantendo o resto do CSS original) ==== */
 .titulo__principal {
     font-size: 1.8rem;
-    color: #222;
+    color: #6631D7;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -135,6 +125,6 @@ body {
 
     .cabecalho__menu a {
         margin-left: 15px;
-        font-size: 14px;
+        font-size: 10px;
     }
 }
